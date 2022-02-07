@@ -1,0 +1,51 @@
+
+td:hover {
+  background-color: #f5dd90;
+}
+
+td {
+  border: 3px solid black;
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+table {
+  border: 4px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(75, 75, 75, 255);
+  border-collapse: collapse;
+}
+
+.error {
+  background-color: #f76c5e;
+}
+
+.user-input {
+  background-color: #f2f2f2;
+}
+
+.Selector {
+  margin-top: 20px;
+}
+
+.Sector td:nth-child(3n) {
+  border-right: 10px solid black;
+}
+
+.Board table tr:nth-child(3n) {
+  border-bottom: 10px solid black;
+}
+
+.Board table tr:first-child {
+  border-top: 10px solid black;
+}
+
+.Sector td:first-child {
+  border-left: 10px solid black;
+}
