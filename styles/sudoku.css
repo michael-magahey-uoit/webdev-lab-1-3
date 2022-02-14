@@ -34,6 +34,10 @@ table {
   margin-top: 20px;
 }
 
+.Board {
+  margin-top: 2%;
+}
+
 .Sector td:nth-child(3n) {
   border-right: 10px solid black;
 }
@@ -48,4 +52,27 @@ table {
 
 .Sector td:first-child {
   border-left: 10px solid black;
+}
+
+#highScores {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 40%;
+  margin-right: 40%;
+  text-align: center;
+}
+
+.nav-logo {
+  overflow: hidden;
+  display: inline-block;
+  border: 1px transparent;
+}
+
+.navbarToggleExternalContent {
+  border: 1px transparent;
+  margin-bottom: 15px;
+}
+
+.holder {
+  display: flex;
 }
