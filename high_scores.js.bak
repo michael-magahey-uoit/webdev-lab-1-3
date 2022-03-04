@@ -3,6 +3,8 @@ function buildHighScores(scores) {
 	for (score in scores)
 	{
 		highscores += `<tr><td>${scores[score]["date"]}</td><td>${scores[score]["duration"]}</td></tr>`;
+		console.log(`Loaded ${scores[score]}`);
 	}
+	console.log(highscores);
 	document.getElementsByTagName("tbody")[0].innerHTML = highscores;
 }

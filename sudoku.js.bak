@@ -41,7 +41,9 @@ function getRandomStarting(x, y) {
 }
 
 function getRandomPositionWithinBlock(block) {
-	return "Unfinished";
+	012
+	345
+	678
 }
 
 function getValueAtCell(x, y) {
