@@ -4,9 +4,13 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="styles/sudoku.css">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="sudoku.js"></script>
 		<title>SUDOKU</title>
 	</head>
 	<body>
+		<script>
+			
+		</script>
 		<section class="topnav">
 			<nav class="navbar navbar-dark bg-dark navbar-expand-md">
 				<div class="holder">
@@ -36,119 +40,119 @@
 		<section class="Board">
 			<table>
 				<tr class="Sector">
-					<td id="cell11"></td>
-					<td id="cell12"></td>
-					<td id="cell13"></td>
-					<td id="cell14"></td>
-					<td id="cell15"></td>
-					<td id="cell16"></td>
-					<td id="cell17"></td>
-					<td id="cell18"></td>
-					<td id="cell19"></td>
+					<td id="cell11" onclick="attemptMove(1, 1)"></td>
+					<td id="cell12" onclick="attemptMove(1, 2)"></td>
+					<td id="cell13" onclick="attemptMove(1, 3)"></td>
+					<td id="cell14" onclick="attemptMove(1, 4)"></td>
+					<td id="cell15" onclick="attemptMove(1, 5)"></td>
+					<td id="cell16" onclick="attemptMove(1, 6)"></td>
+					<td id="cell17" onclick="attemptMove(1, 7)"></td>
+					<td id="cell18" onclick="attemptMove(1, 8)"></td>
+					<td id="cell19" onclick="attemptMove(1, 9)"></td>
 				</tr>
 				<tr class="Sector">
-					<td id="cell21"></td>
-					<td id="cell22"></td>
-					<td id="cell23"></td>
-					<td id="cell24"></td>
-					<td id="cell25"></td>
-					<td id="cell26"></td>
-					<td id="cell27"></td>
-					<td id="cell28"></td>
-					<td id="cell29"></td>
+					<td id="cell21" onclick="attemptMove(2, 1)"></td>
+					<td id="cell22" onclick="attemptMove(2, 2)"></td>
+					<td id="cell23" onclick="attemptMove(2, 3)"></td>
+					<td id="cell24" onclick="attemptMove(2, 4)"></td>
+					<td id="cell25" onclick="attemptMove(2, 5)"></td>
+					<td id="cell26" onclick="attemptMove(2, 6)"></td>
+					<td id="cell27" onclick="attemptMove(2, 7)"></td>
+					<td id="cell28" onclick="attemptMove(2, 8)"></td>
+					<td id="cell29" onclick="attemptMove(2, 9)"></td>
 				</tr>
 				<tr class="Sector">
-					<td id="cell31"></td>
-					<td id="cell32"></td>
-					<td id="cell33"></td>
-					<td id="cell34"></td>
-					<td id="cell35"></td>
-					<td id="cell36"></td>
-					<td id="cell37"></td>
-					<td id="cell38"></td>
-					<td id="cell39"></td>
+					<td id="cell31" onclick="attemptMove(3, 1)"></td>
+					<td id="cell32" onclick="attemptMove(3, 2)"></td>
+					<td id="cell33" onclick="attemptMove(3, 3)"></td>
+					<td id="cell34" onclick="attemptMove(3, 4)"></td>
+					<td id="cell35" onclick="attemptMove(3, 5)"></td>
+					<td id="cell36" onclick="attemptMove(3, 6)"></td>
+					<td id="cell37" onclick="attemptMove(3, 7)"></td>
+					<td id="cell38" onclick="attemptMove(3, 8)"></td>
+					<td id="cell39" onclick="attemptMove(3, 9)"></td>
 				</tr>
 				<tr class="Sector">
-					<td id="cell41"></td>
-					<td id="cell42"></td>
-					<td id="cell43"></td>
-					<td id="cell44"></td>
-					<td id="cell45"></td>
-					<td id="cell46"></td>
-					<td id="cell47"></td>
-					<td id="cell48"></td>
-					<td id="cell49"></td>
+					<td id="cell41" onclick="attemptMove(4, 1)"></td>
+					<td id="cell42" onclick="attemptMove(4, 2)"></td>
+					<td id="cell43" onclick="attemptMove(4, 3)"></td>
+					<td id="cell44" onclick="attemptMove(4, 4)"></td>
+					<td id="cell45" onclick="attemptMove(4, 5)"></td>
+					<td id="cell46" onclick="attemptMove(4, 6)"></td>
+					<td id="cell47" onclick="attemptMove(4, 7)"></td>
+					<td id="cell48" onclick="attemptMove(4, 8)"></td>
+					<td id="cell49" onclick="attemptMove(4, 9)"></td>
 				</tr>
 				<tr class="Sector">
-					<td id="cell51"></td>
-					<td id="cell52"></td>
-					<td id="cell53"></td>
-					<td id="cell54"></td>
-					<td id="cell55"></td>
-					<td id="cell56"></td>
-					<td id="cell57"></td>
-					<td id="cell58"></td>
-					<td id="cell59"></td>
+					<td id="cell51" onclick="attemptMove(5, 1)"></td>
+					<td id="cell52" onclick="attemptMove(5, 2)"></td>
+					<td id="cell53" onclick="attemptMove(5, 3)"></td>
+					<td id="cell54" onclick="attemptMove(5, 4)"></td>
+					<td id="cell55" onclick="attemptMove(5, 5)"></td>
+					<td id="cell56" onclick="attemptMove(5, 6)"></td>
+					<td id="cell57" onclick="attemptMove(5, 7)"></td>
+					<td id="cell58" onclick="attemptMove(5, 8)"></td>
+					<td id="cell59" onclick="attemptMove(5, 9)"></td>
 				</tr>
 				<tr class="Sector">
-					<td id="cell61"></td>
-					<td id="cell62"></td>
-					<td id="cell63"></td>
-					<td id="cell64"></td>
-					<td id="cell65"></td>
-					<td id="cell66"></td>
-					<td id="cell67"></td>
-					<td id="cell68"></td>
-					<td id="cell69"></td>
+					<td id="cell61" onclick="attemptMove(6, 1)"></td>
+					<td id="cell62" onclick="attemptMove(6, 2)"></td>
+					<td id="cell63" onclick="attemptMove(6, 3)"></td>
+					<td id="cell64" onclick="attemptMove(6, 4)"></td>
+					<td id="cell65" onclick="attemptMove(6, 5)"></td>
+					<td id="cell66" onclick="attemptMove(6, 6)"></td>
+					<td id="cell67" onclick="attemptMove(6, 7)"></td>
+					<td id="cell68" onclick="attemptMove(6, 8)"></td>
+					<td id="cell69" onclick="attemptMove(6, 9)"></td>
 				</tr>
 				<tr class="Sector">
-					<td id="cell71"></td>
-					<td id="cell72"></td>
-					<td id="cell73"></td>
-					<td id="cell74"></td>
-					<td id="cell75"></td>
-					<td id="cell76"></td>
-					<td id="cell77"></td>
-					<td id="cell78"></td>
-					<td id="cell79"></td>
+					<td id="cell71" onclick="attemptMove(7, 1)"></td>
+					<td id="cell72" onclick="attemptMove(7, 2)"></td>
+					<td id="cell73" onclick="attemptMove(7, 3)"></td>
+					<td id="cell74" onclick="attemptMove(7, 4)"></td>
+					<td id="cell75" onclick="attemptMove(7, 5)"></td>
+					<td id="cell76" onclick="attemptMove(7, 6)"></td>
+					<td id="cell77" onclick="attemptMove(7, 7)"></td>
+					<td id="cell78" onclick="attemptMove(7, 8)"></td>
+					<td id="cell79" onclick="attemptMove(7, 9)"></td>
 				</tr>
 				<tr class="Sector">
-					<td id="cell81"></td>
-					<td id="cell82"></td>
-					<td id="cell83"></td>
-					<td id="cell84"></td>
-					<td id="cell85"></td>
-					<td id="cell86"></td>
-					<td id="cell87"></td>
-					<td id="cell88"></td>
-					<td id="cell89"></td>
+					<td id="cell81" onclick="attemptMove(8, 1)"></td>
+					<td id="cell82" onclick="attemptMove(8, 2)"></td>
+					<td id="cell83" onclick="attemptMove(8, 3)"></td>
+					<td id="cell84" onclick="attemptMove(8, 4)"></td>
+					<td id="cell85" onclick="attemptMove(8, 5)"></td>
+					<td id="cell86" onclick="attemptMove(8, 6)"></td>
+					<td id="cell87" onclick="attemptMove(8, 7)"></td>
+					<td id="cell88" onclick="attemptMove(8, 8)"></td>
+					<td id="cell89" onclick="attemptMove(8, 9)"></td>
 				</tr>
 				<tr class="Sector">
-					<td id="cell91"></td>
-					<td id="cell92"></td>
-					<td id="cell93"></td>
-					<td id="cell94"></td>
-					<td id="cell95"></td>
-					<td id="cell96"></td>
-					<td id="cell97"></td>
-					<td id="cell98"></td>
-					<td id="cell99"></td>
+					<td id="cell91" onclick="attemptMove(9, 1)"></td>
+					<td id="cell92" onclick="attemptMove(9, 2)"></td>
+					<td id="cell93" onclick="attemptMove(9, 3)"></td>
+					<td id="cell94" onclick="attemptMove(9, 4)"></td>
+					<td id="cell95" onclick="attemptMove(9, 5)"></td>
+					<td id="cell96" onclick="attemptMove(9, 6)"></td>
+					<td id="cell97" onclick="attemptMove(9, 7)"></td>
+					<td id="cell98" onclick="attemptMove(9, 8)"></td>
+					<td id="cell99" onclick="attemptMove(9, 9)"></td>
 				</tr>
 			</table>
 		</section>
 		<section class="Selector">
 			<table>
 				<tr>
-					<td id="select">1</td>
-					<td id="select">2</td>
-					<td id="select">3</td>
-					<td id="select">4</td>
-					<td id="select">5</td>
-					<td id="select">6</td>
-					<td id="select">7</td>
-					<td id="select">8</td>
-					<td id="select">9</td>
-					<td><img src="images/undo.png"></img></td>
+					<td id="select1" onclick="setActive(1)">1</td>
+					<td id="select2" onclick="setActive(2)">2</td>
+					<td id="select3" onclick="setActive(3)">3</td>
+					<td id="select4" onclick="setActive(4)">4</td>
+					<td id="select5" onclick="setActive(5)">5</td>
+					<td id="select6" onclick="setActive(6)">6</td>
+					<td id="select7" onclick="setActive(7)">7</td>
+					<td id="select8" onclick="setActive(8)">8</td>
+					<td id="select9" onclick="setActive(9)">9</td>
+					<td id="undo" onclick="setActive(-1)"><img src="images/undo.png"></img></td>
 				</tr>
 			</table>
 		</section>
